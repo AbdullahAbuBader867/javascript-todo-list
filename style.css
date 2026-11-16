@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f8fafc !important;
+    font-family: "Poppins", system-ui, sans-serif;
+}
+
+.my-todo-list {
+    max-width: 520px;
+    height: 80vh;
+    background: #fff;
+    padding: 28px;
+    border: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.my-todo-list h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1f2937;
+    text-align: center;
+}
+
+.my-todo-list .input-field input {
+    padding: 14px 16px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    font-size: 15px;
+}
+
+.my-todo-list .input-field input:focus {
+    border: 1px solid #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.my-todo-list .input-field button {
+    background: #6366f1;
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-size: 22px;
+}
+
+.my-todo-list .input-field button:hover {
+    background: #4f46e5;
+}
+
+.my-todo-list .box-tasks {
+    height: 11rem;
+    margin-top: 24px;
+}
+
+.my-todo-list .box-tasks .absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+.my-todo-list .box-tasks .task {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 8px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.my-todo-list .box-tasks .task:hover {
+    background: #f8fafc;
+}
+
+.my-todo-list .box-tasks .task input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #6366f1;
+}
+
+.my-todo-list .box-tasks .task .task-text {
+    font-size: 15px;
+    color: #1f2937;
+}
+
+.my-todo-list .box-tasks .task .task-text.complete {
+    text-decoration: line-through;
+    color: #94a3b8;
+}
+
+.my-todo-list .box-tasks .task button {
+    background: transparent;
+    color: #94a3b8;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+}
+
+.my-todo-list .box-tasks .task button:hover {
+    color: #ef4444;
+}
+
+.my-todo-list .filters-bar {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.my-todo-list .filters-bar button {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #64748b;
+    background: transparent;
+    border: 1px solid;
+}
+
+.my-todo-list .filters-bar button.active {
+    transition: all 0.3s ease-out;
+    background: #ede9fe;
+    color: #6366f1;
+    font-weight: 600;
+}
+
+.my-todo-list footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.my-todo-list footer .clear-completed {
+    background: transparent;
+    color: #64748b;
+    cursor: pointer;
+    padding: 0.2rem;
+    border: 1px solid #64748b;
+    border-radius: 5px;
+}
+
+.my-todo-list footer .clear-completed:hover {
+    background: aliceblue;
+}
+
+.my-todo-list .box-tasks {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.my-todo-list .box-tasks .empty-state.hidden {
+    display: none;
+}
